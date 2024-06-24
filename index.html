@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STandCOIN</title>
+    <style>
+        body {
+            color: var(--tg-theme-text-color);
+            background: var(--tg-theme-bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 50px;
+        }
+
+        .hint {
+            color: var(--tg-theme-hint-color);
+        }
+
+        .link {
+            color: var(--tg-theme-link-color);
+        }
+
+        .button {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #696969;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" class="button" id="counter-icon">  <img src="STandCOIN12.jpg" width="300" height="300" alt: style = "border-radius: 50%; position: relative;">
+    </button>
+    <p><a id="click">0</a></p>  <script>
+        const counterIcon = document.getElementById('counter-icon');  const counterValue = document.getElementById('click');  let currentValue = 0;
+
+        counterIcon.addEventListener('click', () => {
+            currentValue++;
+            counterValue.textContent = currentValue;
+        });
+    </script>
+</body>
+</html>
